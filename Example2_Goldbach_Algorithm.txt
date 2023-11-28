@@ -1,0 +1,52 @@
+
+i1 : load "goldbach_algorithm.m2";
+
+i2 : R=QQ[x,y,z];
+
+i3 : g=2*x^2+3*y^2-7*z^2+5;
+
+i4 : explicitirreducible(g)
+
+The monomials of
+ 
+  2     2     2
+2x  + 3y  - 7z  + 5
+ 
+are
+ 
+  2   2   2
+{x , y , z , 1}
+ 
+The exponent set of
+ 
+  2     2     2
+2x  + 3y  - 7z  + 5
+ 
+is
+ 
+| 2 0 0 |
+| 0 2 0 |
+| 0 0 2 |
+| 0 0 0 |
+ 
+The w points are
+ 
+| 4 4 5 |
+| 4 4 5 |
+| 4 5 4 |
+| 1 0 0 |
+ 
+The corresponding monomials given by the w points are
+ 
+  4 4 5   4 4 5   4 5 4
+{x y z , x y z , x y z , x}
+ 
+The corresponding absolutely irreducible polynomials are
+ 
+  4 4 5       4 4 5       4 5 4
+{x y z  + 1, x y z  + 1, x y z  + 1, x}
+ 
+and also
+ 
+  4 4 5     2       4 4 5     2       4 5 4     2
+{x y z  + 2x  + 1, x y z  + 3y  + 1, x y z  - 7z  + 1, x + 5}
