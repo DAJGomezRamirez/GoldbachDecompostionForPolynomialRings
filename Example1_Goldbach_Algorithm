@@ -1,0 +1,49 @@
+
+i1 : load "goldbach_algorithm.m2";
+
+i2 : R=QQ[x,y];
+
+i3 : f=x*y+x+y+1;
+
+i4 : explicitirreducible(f)
+
+The monomials of
+ 
+x*y + x + y + 1
+ 
+are
+ 
+{x*y, x, y, 1}
+ 
+The exponent set of
+ 
+x*y + x + y + 1
+ 
+is
+ 
+| 1 1 |
+| 1 0 |
+| 0 1 |
+| 0 0 |
+ 
+The w points are
+ 
+| 1 4 |
+| 1 2 |
+| 2 1 |
+| 1 0 |
+ 
+The corresponding monomials given by the w points are
+ 
+    4     2   2
+{x*y , x*y , x y, x}
+ 
+The corresponding absolutely irreducible polynomials are
+ 
+    4         2       2
+{x*y  + 1, x*y  + 1, x y + 1, x}
+ 
+and also
+ 
+    4               2           2
+{x*y  + x*y + 1, x*y  + x + 1, x y + y + 1, x + 1}
